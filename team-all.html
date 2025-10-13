@@ -8,6 +8,53 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
   <link href="assets/css/main.css" rel="stylesheet" />
   <style>
+    /* Add padding to main content to account for header */
+    #main {
+      margin-top: 90px;
+    }
+    
+    /* Override navigation colors for team page */
+    .header .logo h1 {
+      color: #000 !important;
+    }
+    
+    @media (min-width: 1280px) {
+      .navbar a,
+      .navbar a:focus {
+        color: rgba(0, 0, 0, 0.8) !important;
+      }
+      
+      .navbar a:hover,
+      .navbar .active,
+      .navbar .active:focus,
+      .navbar li:hover>a {
+        color: #000 !important;
+      }
+    }
+    
+    @media (max-width: 1279px) {
+      .navbar a,
+      .navbar a:focus {
+        color: rgba(0, 0, 0, 0.8) !important;
+      }
+      
+      .navbar a:hover,
+      .navbar .active,
+      .navbar .active:focus,
+      .navbar li:hover>a {
+        color: #000 !important;
+      }
+    }
+    
+    /* Mobile navigation toggle colors */
+    .mobile-nav-show {
+      color: #000 !important;
+    }
+    
+    .mobile-nav-hide {
+      color: #000 !important;
+    }
+    
     .year-selector {
       margin: 30px 0;
       text-align: center;
@@ -39,6 +86,27 @@
   </style>
 </head>
 <body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1>Mayavi<span></span></h1>
+      </a>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="events">Events</a></li>
+          <li><a href="team-all.html" class="active">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
   <main id="main">
     <section class="team">
       <div class="container" data-aos="fade-up">
