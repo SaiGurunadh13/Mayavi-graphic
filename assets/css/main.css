@@ -1,15 +1,16 @@
 
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Roboto", sans-serif;
-  --font-secondary: "Work Sans", sans-serif;
+  --font-default: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-primary: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 }
 
 /* Colors */
 :root {
-  --color-default: #364d59;
-  --color-primary: #ED73FA;
-  --color-secondary: #52565e;
+  --color-default: #E7E7EC;
+  --color-primary: #A855F7;
+  --color-secondary: #9699A5;
 }
 
 /* Smooth scroll behavior */
@@ -23,6 +24,7 @@
 body {
   font-family: var(--font-default);
   color: var(--color-default);
+  background-color: #050507;
   overflow-x: hidden;
 }
 
@@ -32,7 +34,7 @@ a {
 }
 
 a:hover {
-  color: #9E2FDB;
+  color: #C084FC;
   text-decoration: none;
 }
 
@@ -54,7 +56,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f5f6f7;
+  background-color: #08080C;
 }
 
 .section-header {
@@ -66,7 +68,7 @@ section {
   font-size: 32px;
   font-weight: 700;
   position: relative;
-  color: #2e3135;
+  color: #FFFFFF;
 }
 
 .section-header h2:before,
@@ -1172,7 +1174,9 @@ section {
 
 .about .our-story {
   padding: 40px;
-  background-color: #f5f6f7;
+  background-color: #0D0D14;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
 }
 
 @media (min-width: 991px) {
@@ -1184,14 +1188,14 @@ section {
 .about .our-story h4 {
   text-transform: uppercase;
   font-size: 18px;
-  color: #838893;
+  color: var(--color-primary);
 }
 
 .about .our-story h3 {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: var(--color-secondary);
+  color: #FFFFFF;
 }
 
 .about .our-story p:last-child {

@@ -199,13 +199,17 @@ document.addEventListener('DOMContentLoaded', () => {
    * Animation on scroll function and init
    */
   function aos_init() {
-    AOS.init({
-      duration: 800,
-      easing: 'slide',
-      once: true,
-      mirror: false
-    });
+    if (typeof AOS !== 'undefined') {
+      AOS.init({
+        duration: 800,
+        easing: 'slide',
+        once: true,
+        mirror: false
+      });
+      AOS.refresh();
+    }
   }
+  aos_init();
   window.addEventListener('load', () => {
     aos_init();
   });
