@@ -1,342 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <style>
-    .swiper-slide {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      width: 45%;
-      height: auto; /* Adjust height as needed */
-      object-fit: cover; /* Ensures the image covers the container */
-    }
-
-    .swiper-pagination {
-      position: relative;
-      top: 270px; /* Adjust this value to position pagination below images */
-      text-align: center;
-      width: 100%;
-    }
-
-    .header-container {
-      display: flex;
-      align-items: center;
-    }
-
-    .back-button {
-      background-color: transparent;
-      border: none;
-      font-size: 24px;
-      margin-right: 10px;
-    }
-
-    .author-name {
-      position: fixed;
-      bottom: -2px;
-      right: 200px;
-      font-size: 16px;
-      color: #000;
-    }
-  </style>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Mayavi</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-741QDCWYD7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-741QDCWYD7');
-  </script>
-
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" href="assets/img/favicon.ico">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Blog | Mayavi Technology Club</title>
+<link rel="icon" href="assets/img/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/pages.css">
 </head>
-
 <body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Mayavi<span></span></h1>
-      </a>
-
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index">Home</a></li>
-          <li><a href="blogs.html" class="active">Blogs</a></li>
-          <li><a href="about">About Us</a></li>
-          <li><a href="events/">Events</a></li>
-
-          <li><a href="team">Team</a></li>
-
-          <li><a href="contact">Contact</a></li>
-        </ul>
-      </nav><!-- .navbar -->
-    </div>
-  </header><!-- End Header -->
-  <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/projects/marathon.jpg');">
-    <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
-
-      <h2>Blogs</h2>
-      <ol>
-        <li><a href="index">Home</a></li>
-        <li>Blogs</li>
-      </ol>
-
-    </div>
-  </div><!-- End Breadcrumbs -->
-
-  <main id="main">
-    <section id="blog-details" class="blog-details section-bg">
-      <div class="container" data-aos="fade-up">
-        <div id="blog-content">
-          <!-- Blog details will be injected here -->
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-    <iframe src="events/footer.html" frameborder="0"></iframe>
-  </footer>
-  <!-- End Footer -->
-
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <div id="preloader"></div>
-
- 
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-  <script>
-    $(document).ready(function () {
-      // Load footer content using jQuery AJAX
-      $.get("events/footer.html", function (data) {
-        $("footer").html(data);
-      });
-    });
-  </script>
-
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-    const spaceId = '90ufhhyngsqh';
-    const accessToken = 'RyU97nj8AZmq4VUNAUZ4ItNX9mDc8H8Ri7SZamGOows';
-
-    async function fetchBlogDetails(title) {
-      const url = `https://cdn.contentful.com/spaces/${spaceId}/entries?access_token=${accessToken}&content_type=mayaviBlog&fields.title=${encodeURIComponent(title)}&include=1`;
-
-      try {
-        const response = await fetch(url);
-        const data = await response.json();
-        displayBlogDetails(data);
-      } catch (error) {
-        console.error('Error fetching blog details:', error);
-      }
-    }
-
-    function formatContent(content, assets) {
-      // Replace __text__ with <strong>text</strong>
-      content = content.replace(/__(.*?)__/g, '<strong>$1</strong>');
-
-      // Replace image references with <img> tags
-      content = content.replace(/!\[(.*?)\]\((.*?)\)/g, (match, alt, url) => {
-        // Check if the URL is a Contentful asset ID
-        if (url.startsWith('//')) {
-          const asset = assets.find(asset => asset.fields.file.url.endsWith(url.split('/').pop()));
-          if (asset) {
-            url = `https:${asset.fields.file.url}`;
-          }
-        }
-        return `<div style="text-align: center;"><img src="${url}" alt="${alt}" class="img-fixed-center lg-trigger" data-src="${url}"></div>`;
-      });
-
-      // Replace \n with <br>
-      content = content.replace(/\n/g, '<br>');
-
-      return content;
-    }
-
-    function displayBlogDetails(data) {
-      const blogContent = $('#blog-content');
-      blogContent.empty();
-
-      const post = data.items[0];
-      if (!post) {
-        blogContent.append('<p>Sorry, no blog details available.</p>');
-        return;
-      }
-
-      const field = post.fields;
-      const assets = data.includes.Asset || [];
-      const referenceImages = field.referenceImg || [];
-      const imageUrls = referenceImages.map(img => {
-        const asset = assets.find(asset => asset.sys.id === img.sys.id);
-        return asset ? `https:${asset.fields.file.url}` : 'default-image.png';
-      });
-
-      let imageSlider = '<div class="swiper-container"><div class="swiper-wrapper">';
-      imageUrls.forEach(url => {
-        const isImage = /\.(jpg|jpeg|png|gif)$/i.test(url);
-        const isVideo = /\.(mp4|webm|ogg)$/i.test(url);
-
-        if (isImage) {
-          imageSlider += `<div class="swiper-slide"><img src="${url}" alt="Reference Image" class="img-fluid lg-trigger" data-src="${url}"></div>`;
-        } else if (isVideo) {
-          imageSlider += `<div class="swiper-slide"><video controls class="video-fluid"><source src="${url}" type="video/mp4">Your browser does not support the video tag.</video></div>`;
-        }
-      });
-      imageSlider += '</div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div></div>';
-
-      blogContent.append(
-  `<div class="blog-item">
-    <h2 style="text-align:center;">${field.title}</h2>
-    <br>
-    <div class="blog-slider">${imageSlider}</div>
-    <p>${formatContent(field.content, assets)}</p>
-     <br><br>
-    <div class="author-name">~ ${field.author}(${field.id})</div>
-  </div>`
-);
-
-if (field.youTubeLink !== null && field.youTubeLink !== undefined) {
-  blogContent.append(
-    `<div class="Link">
-          <p>Watch the detailed explanation video: <a href="${field.youTubeLink}" target="_blank">Click Here</a></p>
-
-    </div>`
-   
-  );
-}
-
-      new Swiper('.swiper-container', {
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-
-      // Initialize lightgallery.js on images with class 'lg-trigger'
-      lightGallery(document.querySelector('.swiper-container'), {
-        selector: '.lg-trigger',
-        plugins: [lgThumbnail, lgZoom],
-      });
-    }
-
-    $(document).ready(function () {
-      $.get("events/footer.html", function (data) {
-        $("footer").html(data);
-      });
-
-      const blogTitle = localStorage.getItem('blogTitle');
-      if (blogTitle) {
-        fetchBlogDetails(blogTitle);
-      } else {
-        $('#blog-content').html('<p>No blog title found. Please go back and select a blog.</p>');
-      }
-    });
-  </script>
-  
-  <style>
-    .img-fixed-center {
-      display: block;
-      margin: 0 auto;
-      width: 650px; /* Set fixed width */
-      height: auto; /* Maintain aspect ratio */
-      cursor: pointer; /* Change cursor to pointer */
-    }
-    .video-fluid {
-      display: block;
-      margin: 0 auto;
-      width: 1000px; /* Set fixed width */
-      height: auto; /* Maintain aspect ratio */
-    }
-    .swiper-button-prev,
-    .swiper-button-next {
-      color: rgb(0, 0, 0); /* Customize the color of the arrows */
-      position: absolute;
-      top: 50%;
-      width: 27px;
-      height: 44px;
-      margin-top: -22px;
-      z-index: 10;
-      cursor: pointer;
-      background-size: 27px 44px;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    .swiper-button-prev {
-      left: 10px;
-      right: auto;
-      background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="blue" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>');
-    }
-    .swiper-button-next {
-      right: 10px;
-      left: auto;
-      background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="blue" d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>');
-    }
-    .swiper-container {
-      position: relative;
-    }
-  </style>
+<div class="topbar" aria-hidden="true"></div><div class="noise" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div><div class="cursor-ring" aria-hidden="true"><span>VIEW</span></div><div class="bg-grid" aria-hidden="true"></div>
+<header id="header" class="header">
+  <a href="index.html" class="brand" data-cursor="HOME">
+    <img src="assets/img/mayavilogowhite.png" alt="Mayavi logo">
+    <span><b>MAYAVI</b><small>TECH CLUB · KLU</small></span>
+  </a>
+  <nav id="nav" class="nav" aria-label="Main">
+    <a href="index.html">Home</a><a href="blogs.html" class="active">Blogs</a><a href="about.html">About Us</a>
+    <a href="events">Events</a><a href="team-all.html">Team</a><a href="contact.html">Contact</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><i class="bi bi-list"></i></button>
+  <div class="navprog" aria-hidden="true"><span id="np-label">HOME</span><i><b id="np-bar"></b></i><span id="np-pct">0%</span></div>
+</header>
+<main class="page-main">
+<section class="sub-hero">
+  <div class="sub-bg" style="background-image:url('assets/img/projects/marathon.jpg')"></div><span class="sub-jp" aria-hidden="true">記事</span>
+  <div class="sub-inner"><span class="tag r">[ CHAPTER // BLOGS ]</span><h1 class="sub-title">Blogs</h1>
+  <nav class="crumbs r" aria-label="Breadcrumb"><span><a href="index.html">Home</a></span><span><a href="blogs.html">Blogs</a></span><span>Article</span></nav></div>
+  <div class="sub-hud r"><b>MAYAVI SYSTEM · ONLINE</b>PAGE: ARTICLE</div>
+</section>
+<section class="wrap"><div id="blog-content"><p class="empty">Loading blog…</p></div></section>
+</main>
+<footer class="footer">
+  <div class="foot-top">
+    <div><h3>Mayavi</h3><p>K L University Green Fields, Vaddeswaram, Guntur District, AP Email: support@klefmayavi.tech</p><div class="social"><a href="mailto:support@klefmayavi.tech" target="_blank" rel="noopener" aria-label="envelope"><i class="bi bi-envelope"></i></a><a href="https://t.me/+q38bOXvcREBmMGFl" target="_blank" rel="noopener" aria-label="telegram"><i class="bi bi-telegram"></i></a><a href="https://www.instagram.com/klef.mayavi/" target="_blank" rel="noopener" aria-label="instagram"><i class="bi bi-instagram"></i></a><a href="https://www.linkedin.com/company/mayavi-technology-club/mycompany/" target="_blank" rel="noopener" aria-label="linkedin"><i class="bi bi-linkedin"></i></a><a href="https://discord.com/invite/UrWKGFffhG" target="_blank" rel="noopener" aria-label="discord"><i class="bi bi-discord"></i></a><a href="https://www.youtube.com/channel/UCbDBefAKb5m5FigI2j0UQPQ" target="_blank" rel="noopener" aria-label="youtube"><i class="bi bi-youtube"></i></a></div></div>
+    <div><h4>Navigation</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="events">Events</a><a href="team-all.html">Team</a><a href="contact.html">Contact</a></div>
+    <div><h4>Domains</h4><a href="index.html#wings">Game Development</a><a href="index.html#wings">Extended Reality</a><a href="index.html#wings">Modelling &amp; Animation</a><a href="index.html#wings">UI/UX Design</a></div>
+  </div>
+  <div class="foot-bot"><span>© 2026 MAYAVI TECHNOLOGY CLUB · K L UNIVERSITY</span><a href="#hero" id="top" data-cursor="TOP">PRESS ↑ TO RETURN</a></div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="js/page.js"></script>
+<script src="js/blog.js"></script>
 </body>
-
 </html>
